@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "rules": [
+    {
+      "id": "spam",
+      "labelKey": "SMLS.moderation.automatic_rule.spam",
+      "defaultEnabled": true,
+      "channels": ["global", "local"],
+      "match": "any",
+      "requirements": [
+        {
+          "metric": "message_count",
+          "groupBy": "similar_content",
+          "minimum": 4,
+          "windowMs": 5000,
+          "similarityThreshold": 0.8,
+          "fuzzyMinLength": 8
+        }
+      ]
+    },
+    {
+      "id": "text_wall",
+      "labelKey": "SMLS.moderation.automatic_rule.text_wall",
+      "defaultEnabled": true,
+      "channels": ["global", "local"],
+      "match": "all",
+      "requirements": [
+        {
+          "metric": "rendered_lines",
+          "minimum": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "dmls",
+  "id": "smls",
   "version": "${version}",
-  "name": "Duper's Mod for Lazy Staff",
+  "name": "Stoneworks Mod for Lazy Staff",
   "description": "A mod made for the LAZY staff of stoneworks",
-  "authors": ["DuperKnight", "Siaffs", "GreenBeanz_"],
+  "authors": ["GreenBeanZ_", "Siaffs", "GreenBeanz_"],
   "contact": {
-    "issues": "https://github.com/DuperKnight/DMLS/issues",
-    "sources": "https://github.com/DuperKnight/DMLS"
+    "issues": "https://github.com/GreenBeanZ_/SMLS/issues",
+    "sources": "https://github.com/GreenBeanZ_/SMLS"
   },
   "license": "MIT",
-  "icon": "assets/dmls/icon.png",
+  "icon": "assets/SMLS/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.duperknight.client.DMLSClient"
+      "com.greenbeanz.client.SMLSClient"
     ],
     "modmenu": [
-      "com.duperknight.client.gui.ModMenuIntegration"
+      "com.greenbeanz.client.gui.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "dmls.mixins.json"
+    "smls.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

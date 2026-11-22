@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.greenbeanz.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "ChatHudAccessor",
+    "MinecraftClientScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
